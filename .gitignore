@@ -1,0 +1,36 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+.eggs/
+
+# Local / IDE
+.local/
+.vscode/
+.idea/
+*.DS_Store
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Terraform
+infra/terraform/.terraform/
+infra/terraform/*.tfstate
+infra/terraform/*.tfstate.backup
+infra/terraform/.terraform.lock.hcl
+
+# Notebooks checkpoints
+notebooks/.ipynb_checkpoints/
+
+# detect-secrets
+.secrets.baseline
